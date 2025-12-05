@@ -1,0 +1,225 @@
+.blog-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(74, 144, 226, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(53, 122, 189, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.blog-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.blog-section-subtitle {
+  font-size: 1.2rem;
+  color: #b8c5d6;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.blog-footer {
+  text-align: center;
+}
+
+.view-all-blogs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.view-all-blogs-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.view-all-blogs-btn:hover::before {
+  left: 100%;
+}
+
+.view-all-blogs-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.4);
+}
+
+.view-all-blogs-btn svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.view-all-blogs-btn:hover svg {
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .blog-section {
+    padding: 2rem 0;
+  }
+
+  .blog-container {
+    padding: 0 1rem;
+  }
+
+  .blog-header {
+    margin-bottom: 2rem;
+  }
+
+  .blog-section-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-section-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .view-all-blogs-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 25px;
+  }
+
+  .view-all-blogs-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .blog-section {
+    padding: 2.5rem 0;
+  }
+
+  .blog-container {
+    padding: 0 1.5rem;
+  }
+
+  .blog-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .blog-section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-section-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .view-all-blogs-btn {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .blog-section {
+    padding: 3.5rem 0;
+  }
+
+  .blog-container {
+    padding: 0 2rem;
+  }
+
+  .blog-section-title {
+    font-size: 2.2rem;
+  }
+
+  .blog-section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .blog-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}

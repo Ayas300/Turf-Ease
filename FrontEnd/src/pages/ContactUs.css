@@ -1,0 +1,211 @@
+.contact-us {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 2rem 0;
+}
+
+.contact-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-us-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.contact-us-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-us-intro {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.contact-us-content {
+  display: grid;
+  gap: 3rem;
+}
+
+.contact-section,
+.feedback-section,
+.visit-section,
+.cta-section {
+  background: rgba(30, 30, 50, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.contact-section h2,
+.feedback-section h2,
+.visit-section h2,
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-icon {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+.contact-details h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.contact-details p {
+  color: #b8c5d6;
+  line-height: 1.6;
+}
+
+.contact-details a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: #357abd;
+  text-decoration: underline;
+}
+
+.feedback-section p,
+.visit-section p,
+.cta-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #b8c5d6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  text-align: center;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.cta-section h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-us {
+    padding: 1rem 0;
+  }
+
+  .contact-us-container {
+    padding: 0 1rem;
+  }
+
+  .contact-us-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-us-intro {
+    font-size: 1.1rem;
+  }
+
+  .contact-section,
+  .feedback-section,
+  .visit-section,
+  .cta-section {
+    padding: 2rem;
+  }
+
+  .contact-methods {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-method {
+    padding: 1.25rem;
+  }
+
+  .contact-details h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us-header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-section,
+  .feedback-section,
+  .visit-section,
+  .cta-section {
+    padding: 1.5rem;
+  }
+
+  .contact-method {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .contact-icon {
+    align-self: center;
+  }
+}
