@@ -1,4 +1,4 @@
-# 🏟️ Turf-Ease: AI-Powered Sports Facility Booking Platform
+# 🏟️ Turf-Ease: Sports Facility Booking Platform
 
 A comprehensive full-stack web application for booking sports facilities (turfs/courts) with advanced features including user authentication, admin dashboard, analytics, and real-time notifications.
 
@@ -27,7 +27,7 @@ A comprehensive full-stack web application for booking sports facilities (turfs/
 
 ## 🎯 Project Overview
 
-**Turf-Ease** is a modern, AI-integrated platform designed to streamline the booking of sports facilities. Users can discover available turfs, make bookings, manage reservations, and owners can manage their properties with advanced analytics. The application includes role-based access control for Users, Owners, and Administrators.
+**Turf-Ease** is a modern platform designed to streamline the booking of sports facilities. Users can discover available turfs, make bookings, manage reservations, and owners can manage their properties with advanced analytics. The application includes role-based access control for Users, Owners, and Administrators.
 
 ### Key Use Cases:
 - **Bookers**: Browse and book available sports facilities
@@ -599,5 +599,3 @@ For support, feature requests, or bug reports:
 **Repository**: [Turf-Ease](https://github.com/Ayas300/Turf-Ease)
 
 ---
-
-*Built with ❤️ by the Turf-Ease Team*
